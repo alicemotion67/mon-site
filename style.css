@@ -1,0 +1,195 @@
+/* Réinitialisation des styles par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color:blanchedalmond;
+}
+
+header {
+    width: 100%;
+    background-color: #3c1e0059;
+    color: blanchedalmond;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    height:100%
+}
+
+.logo img {
+    max-height: 12vh; /* Taille maximale du logo */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 2.5vh;
+    margin: 0 5vh;
+}
+
+a:hover {
+    color: #ff9900; /* Couleur au survol */
+}
+
+#intro {
+    height: 100vh;
+    width: 100%;
+    background-image: url("chocolatchaud1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top:12%;    
+    padding-left:5%;
+    color: blanchedalmond;
+    opacity: 1; /* Opacité initiale (complètement opaque) */
+    transition: opacity 1s; /* Propriété à animer (opacity) et durée de l'animation (1 seconde) */
+}
+
+#intro p, h2 {
+    animation: fade-in 2s; /* Utilise l'animation "fade-in" pendant 2 secondes */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#intro h2 {
+    font-size: 10vh;
+}
+
+#intro p {
+    font-size: 2.5vh;
+}
+
+
+#staff {
+    height: 100vh;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #326E78;
+}
+
+#staff p, #staff h2 {
+    animation: fade-in 2s; /* Utilise l'animation "fade-in" pendant 2 secondes */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.staff-text {
+    max-width: 50%;
+}
+
+#staff h2 {
+    font-size: 10vh;;
+}
+
+#staff p {
+    font-size: 2.5vh;
+}
+
+#staff img {
+    height: 50%;
+    margin: 0 10%;
+}
+
+#bande-photos {
+    width: 100%;
+}
+
+#bande-photos img{
+    width: 100%;
+}
+
+
+#menu-section {
+    width: 100%;
+    background-image: url("wood.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10vh 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-bg {
+    width: 100%;
+    background-color: #326E78;
+    color: white;
+    padding: 10vh 10vh;
+    border-radius: 10px;
+    box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.685);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menu-bg h1 {
+    font-size: 10vh;
+    margin-bottom: 12vh;
+    align-self: center;
+}
+
+#menu-page {
+    width: 100%;
+}
+
+.tg{
+    width: 100%;
+}
+.tg-0laxT {
+    font-size: 3vh;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tg-0lax p{
+    font-size: 1.5vh;
+}
+
+th, td {
+    padding: 15px;
+  }
